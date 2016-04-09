@@ -1,0 +1,23 @@
+{
+  "name": "buzzword-bingo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owen28299/buzzword-bingo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owen28299/buzzword-bingo/issues"
+  },
+  "homepage": "https://github.com/owen28299/buzzword-bingo#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
