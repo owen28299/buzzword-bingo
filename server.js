@@ -10,7 +10,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.use('/reset', resetRoute);
-app.use('/buzzwords', buzzwordsRoute);
+app.use('/buzzword', buzzwordsRoute);
+
+app.post('/hello', function(req,res){
+  console.log(req.url);
+});
 
 var server = app.listen(8080, function(){
   var host = server.address().address;

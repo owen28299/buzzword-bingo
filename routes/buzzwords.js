@@ -1,8 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var JSONFile = require('./score.js');
+var validation = require('./validation.js');
 
-router.route("/")
+router.use(validation)
+  .route("/")
   .get(function(req,res){
     res.json(JSONFile);
   })
