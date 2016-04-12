@@ -12,13 +12,13 @@ app.use(express.static('public'));
 app.use('/reset', resetRoute);
 app.use('/buzzword', buzzwordsRoute);
 
-app.post('/hello', function(req,res){
-  console.log(req.url);
-});
+if(!module.parent){
 
-var server = app.listen(8080, function(){
-  var host = server.address().address;
-  var port = server.address().port;
+  var server = app.listen(3001, function(){
+    var host = server.address().address;
+    var port = server.address().port;
 
-  console.log("Buzzwords server listening at http://%s:%s", host, port);
-});
+    console.log("Buzzwords server listening at http://%s:%s", host, port);
+  });
+
+}

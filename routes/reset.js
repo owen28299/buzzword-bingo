@@ -6,6 +6,7 @@ var validation = require('./validation.js');
 router.use(validation)
   .route("/")
   .post(function(req,res){
+
     JSONFile.buzzwords = [];
     JSONFile.score = 0;
     res.json({
