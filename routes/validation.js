@@ -55,6 +55,12 @@ function validateRequest(req,res,next){
       break;
     }
 
+    if(inputObj[prop] === ""){
+
+      match = false;
+      break;
+    }
+
     if(validObj[prop] !== typeof inputObj[prop] &&
       (validObj[prop] !== inputObj[prop])){
 
