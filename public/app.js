@@ -45,7 +45,7 @@ getBuzzwords.addEventListener("click", function(event){
       var button = document.createElement('button');
 
       if(element.heard === true){
-        button.innerHTML = "Bingo";
+        button.innerHTML = "Bingo!";
       }
 
       else {
